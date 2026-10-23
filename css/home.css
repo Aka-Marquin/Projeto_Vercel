@@ -1,0 +1,6 @@
+@import url(layout.css);
+
+.hero{
+    height: 95vh;
+    background-color: #ffc8ae67;
+}

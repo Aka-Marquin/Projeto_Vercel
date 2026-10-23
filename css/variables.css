@@ -1,0 +1,9 @@
+:root{
+    /*--cor--header: #ec5252a1;*/
+    --cor--principal: #FFC7AE;
+    --cor--secundaria: black;
+    --padrao--texto--cor:black;
+    --secundaria--texto--cor:white;
+    --altura--header: 7.5vh;
+    --altura--footer: 15vh;
+}
