@@ -31,34 +31,47 @@ body h3 {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 2);
 }
 
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 15px 50px;
+    width: 100%;
 }
 
-.logoContainer{
+.logoContainer {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.logoContainer h1{
-   font-family: 'Pacifico';
-   font-size: medium;
-   color: white;
+.logoContainer img {
+    width: auto;
+    height: 50px;
 }
 
-.logoContainer img{
-  width: auto;
-  height: calc(var(--altura--header) - 4vh);
+.logoContainer h3 {
+    font-family: 'Pacifico';
+    font-size: 20px;
+    color: white;
 }
 
-.navigation a{
+.menuContainer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menuContainer a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menuContainer a:hover {
+    color: var(--fundo);
 }
 
 .link-menu{
