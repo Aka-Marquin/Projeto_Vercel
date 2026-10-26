@@ -1,9 +1,34 @@
 :root{
-    /*--cor--header: #ec5252a1;*/
     --cor--principal: #FFC7AE;
     --cor--secundaria: black;
     --padrao--texto--cor:black;
     --secundaria--texto--cor:white;
     --altura--header: 7.5vh;
     --altura--footer: 15vh;
+
+    /*CORES DA PADOQUINHA:*/
+    
+    --hero:#FFE691;
+    --local:#95d5ee;
+    --cabeça--pe:#585872;
+    --titulos:#9e4446;
+}
+
+@font-face {
+    font-family: Pacifico ;
+    src: url(../assets/fonts/Pacifico.ttf);
+}
+
+@font-face {
+    font-family: CORPO;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CORPO - afroitaliano;
+    src: url(../assets/fonts/Poppins-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
 }
