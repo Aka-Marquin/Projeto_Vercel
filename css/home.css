@@ -1,7 +1,254 @@
 @import url(layout.css);
+@import url(variables.css);
 
 .hero{
-    height: 95vh;
-    background-color: #ffc8ae67;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 120px 50px 60px 50px;
+    background-color: var(--amarelo);
 }
 
+.heroTexto{
+    width: 50%;
+}
+
+.heroTitulo{
+    color: var(--vermelho);
+    font-family: 'Pacifico';
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.heroTag{
+    background-color: white;
+    color: var(--vermelho);
+    font-weight: bold;
+    width: fit-content;
+
+    padding: 6px 16px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.heroSubtitulo{
+    margin-bottom: 35px;
+    font-size: large;
+}
+
+.botao{
+    display: inline-block;
+    background-color: var(--vermelho);
+    color: white;
+
+    border: 2px solid var(--vermelho);
+    border-radius: 30px;
+
+    padding: 14px 30px;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.botaoSecundario{
+    margin-left: 10px;
+    background-color: transparent;
+    color:var(--vermelho);
+}
+
+.botao:hover{
+    background-color: darkred;
+    border-color: darkred;
+    transform: translateY(-3px);
+}
+
+.botaoSecundario:hover{
+    background-color: var(--vermelho);
+    border-color: var(--vermelho);
+    color: white;
+}
+
+.heroImagem{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.circulo{
+    width: 380px;
+    height:380px;
+    border: 10px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.madoka{
+    position: absolute;
+    width: 75%;
+    bottom: 0; left: 12%;
+    transform: translateY(-6.5%) scale(-0.75, 0.75);
+    z-index: 2;
+}
+
+.pao{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.selo{
+    position: absolute;
+    bottom: 20px;
+    right: 180px;
+    z-index: 0;
+   
+
+    height: 100px;
+    width: 100px;
+    
+    background-color: var(--azul);
+    border: 5px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    
+    transform: rotate(-25deg);
+}
+
+.sobre{
+    padding: 100px 50px;
+    background-color: white;
+}
+
+.tituloSecao{
+    margin-bottom: 50px;
+
+    font-family: 'Pacifico';
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--vermelho);
+}
+
+.historiaConteudo{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.historiaTexto{
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.historiaCards{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card{
+    width: 45%;
+    padding: 25px;
+
+    background-color: var(--rosa);
+    border-radius: 15px;
+    text-align: center;
+    transition: 300ms;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.cardNumero{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--vermelho);
+}
+
+.cardAzul{background-color: var(--azul);} 
+.cardAmarelo{background-color: var(--amarelo);}
+
+.comoChegar{
+    padding: 100px 50px;
+    background-color: var(--azul);
+}
+
+.comoChegarConteudo{
+    display: flex;
+    gap: 40px;
+}
+
+.mapa{
+    width: 60%;
+}
+
+.mapa iframe{
+    display: block;
+    width: 100%;
+    height: 420px;
+    
+    border: 6px solid white;
+    border-radius: 15px;
+}
+
+.infoEndereco{
+    width: 40%;
+    padding: 35px;
+
+    background-color: white;
+    border-radius: 15px;
+}
+
+.infoEndereco h3{margin-bottom: 8px; font-size: 20px; color: var(--vermelho);}
+.infoEndereco p {margin-bottom: 25px; line-height: 1.6;}
+
+.contato{
+    padding: 100px 50px;
+    background-color: var(--rosa);
+}
+
+.contato .tituloSecao{
+    margin: 15px;
+}
+
+.contatoTexto{
+    margin-bottom: 40px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(158, 67, 70, 0.2);
+}
+
+.formulario label{margin-bottom: 6px; font-weight: bold;}
+
+.formulario input, .formulario select, .formulariotextarea{
+    margin-bottom: 6px; font-weight: bold;
+    border: 2px solid var(--azul); border-radius: 8px;
+    font-family: inherit; font-size: 15px; color: var(roxa);
+}
