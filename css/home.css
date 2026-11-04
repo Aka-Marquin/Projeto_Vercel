@@ -209,7 +209,7 @@
 }
 
 .infoEndereco{
-    width: 40%;
+    /* width: 40%; */
     padding: 35px;
 
     background-color: white;
@@ -251,4 +251,63 @@
     margin-bottom: 6px; font-weight: bold;
     border: 2px solid var(--azul); border-radius: 8px;
     font-family: inherit; font-size: 15px; color: var(roxa);
+}
+
+.formulario input:focus, .formulario select:focus, .formulario textarea:focus{
+outline: none; border-color: var(--vermelho);}
+
+.formulario textarea{height: 130px; resize: vertical;}
+
+.botaoEnviar{
+    margin-top: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px){
+    .selo{
+        right: 220px;
+    }
+}
+
+@media (max-width: 768px){
+  .madoka{
+    position: absolute;
+    width: 65%;
+    bottom: 0; left: 55px;
+    transform: translateY(-35%) scale(-1, 1);
+    z-index: 2;
+  }
+
+  .selo{
+    position: absolute;
+    bottom: -30px;
+    left: 184px;
+    z-index: 1;
+   
+
+    height: 100px;
+    width: 90px;
+    
+    background-color: var(--azul);
+    border: 5px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.circulo{
+    width: 380px;
+    height:380px;
+    border: 10px solid white;
+    border-radius: 35% 35% 35% 550px;
+    overflow: hidden;
+    position: relative;
+}
+
 }

@@ -124,3 +124,72 @@ body{
     padding: 20px;
     text-align: center;
 }
+
+@media (max-width: 768px){
+    html{scroll-padding-top: 170px;}
+
+    .header{
+        height: auto;
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navigation{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+    .footer{padding: 40px 20px 20px;}
+    .footerContainer{flex-direction: column;}
+    .footerColuna{width: 100%;}
+}
+
+@media (max-width: 768px){
+    .hero{
+        flex-direction: column;
+        padding: 190px 20px 60px;
+    }
+
+    .heroTexto, .heroImagem{width: 100%;}
+
+    .heroTexto {text-align: center;}
+
+    .heroTag{margin: 0 auto 20px;}
+
+    .heroTitulo{font-size: 38px;}
+
+    .botaoSecundario{margin-left: 0; margin-top: 10px;}
+
+    .circulo{
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
+
+    .selo{
+        width: 85px;
+        height: 85px;
+        right: 20px;
+        font-size: 14px;  
+    }
+
+    .historia, .comoChegar, .contato{padding: 70px 20px;}
+    .tituloSecao{font-size: 34px;}
+    .historiaConteudo{flex-direction: column;}
+
+    .historiaTexto, .historiaCards, .infoEndereco , .mapa, .card{width: 100%;}
+
+    .comoChegarConteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .infoEndereco{
+        padding-right: 100px;
+    }
+    .formulario{padding: 25px;}
+
+}

@@ -141,14 +141,35 @@
             <input type="tel" name="telefone" id="telefone"
             placeholder="(11) 99999-0123">
 
-            
+            <label for="assunto">Assunto</label>
+            <select name="assunto" id="assunto">
+                <option value="encomenda">Encomenda</option>
+                <option value="duvida">Dúvida</option>
+                <option value="elogio">Elogios</option>
+                <option value="desejo">Fazer um desejo (não recomendamos)</option>
+            </select>
+
+            <label for="produto">Produto</label>
+            <select name="produto" id="produto">
+                <option value="croissant">Croissant Rosa da Madoka</option>
+                <option value="paoQueijo">Pão de Queijo da Charlotte</option>
+                <option value="torta">Torta Tiro Finale da Mami</option>
+                <option value="taiyaki">Taiyaki de Maçã do Amor da Kyoko</option>
+                <option value="sonho">Sonho Azul Oceano da Sayaka</option>
+                <option value="integral">Pão Integral Loop Temporal da Homura</option>
+                <option value="rosquinha">Rosquinha Soul Gem</option>
+                <option value="brigadeiro">Brigadeiro Grief Seed</option>
+                <option value="cafe">Café Walpurgisnacht (extra forte)</option>
+            </select>
+
+                <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Escreva seu pedido aqui."
+            required>
+            </textarea>
+
+            <button type="submit" class="botao botaoEnviar">Enviar pedido</button>    
         </form>
     </section>
-
-
-
-
-
 
 
 
