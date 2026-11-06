@@ -1,2 +1,43 @@
 @import url(./layout.css);
 @import url(./variables.css);
+
+.cardapioTopo{
+    background-color: var(--amarelo);
+    text-align: center;
+    padding: calc(var(--altura--header) + 60px);
+}
+
+.cardapioTag{
+    background-color: white;
+    color: var(--vermelho);
+    font-weight: bold;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 6px 16px;
+    margin: 0 auto;
+}
+
+.cardapioTitulo{
+    color: var(--vermelho);
+    font-family: 'Pacifico';
+    font-size: 56px;
+}
+
+.cardapioSubtitulo{
+    font-size: large;
+    margin: auto;
+}
+
+.cardapioConteudo{
+    display: flex;
+    align-items: flex-start;
+}
+
+.listaCategoria{
+    display: flex;
+    flex-direction: column;
+}
+
+.categoriaCabecalho{border-bottom: 3px solid var(--azul);}
+.listaDeItens{display: flex; gap: 20px;}
+.item{ width: 50%;}

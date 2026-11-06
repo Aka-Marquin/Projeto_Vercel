@@ -250,7 +250,7 @@
 .formulario input, .formulario select, .formulariotextarea{
     margin-bottom: 6px; font-weight: bold;
     border: 2px solid var(--azul); border-radius: 8px;
-    font-family: inherit; font-size: 15px; color: var(roxa);
+    font-family: inherit; font-size: 15px; color: var(--roxa);
 }
 
 .formulario input:focus, .formulario select:focus, .formulario textarea:focus{
@@ -265,13 +265,13 @@ outline: none; border-color: var(--vermelho);}
     cursor: pointer;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 768px){
     .selo{
         right: 220px;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1200px){
   .madoka{
     position: absolute;
     width: 65%;
