@@ -42,9 +42,7 @@
 
 .categoriaCabecalho{border-bottom: 3px solid var(--azul); margin-bottom: 25px; margin-top: 25px;}
 .listaDeItens{display: flex; gap: 20px; flex-wrap: wrap;}
-.categoria{
-    margin-top: 20px;
-}
+.categoria{margin-top: 20px;}
 .item{ 
     width: calc(50% - 10px);
     padding: 10px;
